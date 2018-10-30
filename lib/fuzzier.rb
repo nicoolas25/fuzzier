@@ -16,7 +16,7 @@ module Fuzzier
   end
 
   def self.reseed!
-    self.random = Random.new Random::DEFAULT.rand(10_000)
+    @random = Random.new Random::DEFAULT.rand(10_000)
   end
 
   def self.sample(array)
